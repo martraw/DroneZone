@@ -1,2 +1,23 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 10px (10px/16px = 0,625)
+}
+
 body {
+  font-family: $font-primary;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 8rem calc(100vh - 10rem);
+  grid-template-columns: [full-start] 1fr [center-start] repeat(8, [col-start] minmax(min-content, 16.75rem) [col-end]) [center-end] 1fr [full-end];
+  
 }
