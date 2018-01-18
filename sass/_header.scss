@@ -1,9 +1,10 @@
 .header {
   background-image: url(../img/header-bg.jpg);
-  background-repeat: no-repeat;
+  // background-repeat: no-repeat;
   background-size: cover;
-  grid-column: 1/-1;
-  grid-row: 1/-1;
+  background-position: center;
+  grid-column: full-start/full-end;
+  grid-row: top-nav-start/header-end;
   justify-content: center;
   align-content: center;
   // padding-top: 20rem;
@@ -13,9 +14,15 @@
   grid-row-gap: 2rem;
   justify-items: center;
 
-  // &__content {
-    
-  // }
+  color: #fff;
+
+  &__text {
+    text-align: center;
+    font-size: 1.8rem;
+    line-height: 3rem;
+    color: rgba(#fff, .5);
+    margin-bottom: 4rem;
+  }
 
   
 }

@@ -1,0 +1,43 @@
+.heading-1 {
+  font-size: 4.8rem;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+}
+
+.btn {
+  padding: 2rem 1rem;
+  display: inline-block;
+  width: 20rem;
+  height: 5rem;
+  border-radius: 100px;
+  padding: 0;
+  border: none;
+  font-family: $font-primary;
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 3.6rem;
+  
+  a {
+    text-decoration: none;
+    color: #d32721;
+    }
+  
+  
+  &--white {
+    background-color: #fff;
+  }
+
+  &--transparent {
+    background-color: transparent;
+    border: 1px solid #fff;
+    a {
+      color: #fff;
+
+    }
+  }
+  
+  
+  
+}
+
+ 

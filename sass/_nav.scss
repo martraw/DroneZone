@@ -1,7 +1,6 @@
 .nav-container{
-  // background-color: lightblue;
-  grid-column: 1/-1;
-  grid-row: 1/2;
+  grid-column: full-start/full-end;
+  grid-row: top-nav-start/top-nav-end;
   z-index: 2;
 
   display: grid;
