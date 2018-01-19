@@ -2,4 +2,52 @@
   grid-row: features-start/features-end;
   grid-column: full-start/full-end;
   background-color: $color-grey-1;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 67rem));
+  grid-template-rows: minmax(25rem, 1fr) max-content;
+  grid-row-gap: 1rem;
+  justify-content: center;
+
+  &__box {
+    // display: flex;
+    // flex-flow: row wrap;
+    // justify-content: space-around;
+    // align-items: center;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    justify-items: center;
+    align-items: center;
+  }
+
+  &__item {
+    display: grid;
+    grid-template-rows: 10rem;
+    grid-row-gap: 1rem;
+    justify-items: center;
+    align-items: center;
+    width: 25rem;
+    // height: 20rem;
+  }
+
+  &__img {
+    width: auto;
+    height: auto;
+    display: block;
+    // object-fit: cover;
+  }
+
+  &__text {
+    text-align: center;
+    font-size: 1.6rem;
+    color: #5e6372;
+  }
+
+  &__btn {
+    grid-column: 1/-1;
+    align-self: center;
+    justify-self: center;
+    margin: 10rem 0;
+  }
 }

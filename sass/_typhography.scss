@@ -2,6 +2,15 @@
   font-size: 4.8rem;
   font-weight: 700;
   letter-spacing: 0.2rem;
+  align-self: end;
+}
+
+.heading-3 {
+  font-size: 3rem;
+  font-weight: 700;
+  background-image: $color-gradient;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 .btn {
@@ -19,12 +28,16 @@
   
   a {
     text-decoration: none;
-    color: #d32721;
+    // color: #d32721;
     }
   
   
   &--white {
     background-color: #fff;
+    a {
+      text-decoration: none;
+      color: #d32721;
+      }
   }
 
   &--transparent {
@@ -35,7 +48,16 @@
 
     }
   }
-  
+
+  &--blue {
+    // background-color: red;
+    background: linear-gradient(30deg, #264699, #4964a9);
+   
+    a {
+      text-decoration: none;
+      color: #fff;
+      }
+  }
   
   
 }
