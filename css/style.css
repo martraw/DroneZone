@@ -24,11 +24,11 @@ body {
   grid-row: top-nav-start/top-nav-end;
   z-index: 2;
   display: grid;
-  grid-template-columns: 1fr repeat(8, minmax(min-content, 16.75rem)) 1fr;
+  grid-template-columns: minmax(max-content, 134rem);
+  justify-content: center;
   align-items: center; }
 
 .nav {
-  grid-column: 2/10;
   display: grid;
   grid-template-columns: 1fr max-content;
   align-items: center;
