@@ -17,7 +17,7 @@ body {
 
 .container {
   display: grid;
-  grid-template-rows: [top-nav-start] 8rem [top-nav-end header-start] calc(100vh - 8rem) [header-end features-start] minmax(60rem, min-content) [features-end];
+  grid-template-rows: [top-nav-start] 8rem [top-nav-end header-start] calc(100vh - 8rem) [header-end features-start] minmax(60rem, min-content) [features-end drone-start] minmax(70rem, min-content) [drone-end];
 
   grid-template-columns: [full-start] 1fr [center-start] repeat(8, [col-start] minmax(min-content, 16.75rem) [col-end]) [center-end] 1fr [full-end];
   

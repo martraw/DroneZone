@@ -1,0 +1,31 @@
+.drone {
+  grid-column: center-start/-1;
+  grid-row: drone-start/drone-end;
+  background-image: url(../img/drone-bg.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+
+  &__content {
+
+  }
+
+  &__text {
+
+  }
+
+  &__features-list {
+
+  }
+
+  &__list {
+
+  }
+
+  &__list-item {
+
+  }
+
+  &__number {
+    
+  }
+}
