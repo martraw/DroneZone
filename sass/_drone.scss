@@ -72,9 +72,12 @@
   }
 
   &__img {
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover;
+    display: flex;
+    align-items: center;
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
   }
 }

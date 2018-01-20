@@ -24,11 +24,12 @@ body {
   grid-row: top-nav-start/top-nav-end;
   z-index: 2;
   display: grid;
-  grid-template-columns: minmax(max-content, 134rem);
+  grid-template-columns: minmax(6rem, 1fr) minmax(max-content, 134rem) minmax(6rem, 1fr);
   justify-content: center;
   align-items: center; }
 
 .nav {
+  grid-column: 2/3;
   display: grid;
   grid-template-columns: 1fr max-content;
   align-items: center;
@@ -159,10 +160,11 @@ body {
   .drone__paragraph {
     margin-left: 3rem; }
   .drone__img {
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover; }
+    display: flex;
+    align-items: center; }
+    .drone__img img {
+      max-width: 100%;
+      height: auto; }
 
 .heading-1 {
   font-size: 4.8rem;

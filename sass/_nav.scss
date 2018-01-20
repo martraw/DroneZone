@@ -5,13 +5,13 @@
 
   display: grid;
   // grid-template-columns: 1fr repeat(8, minmax(min-content, 16.75rem)) 1fr;
-  grid-template-columns: minmax(max-content, 134rem);
+  grid-template-columns: minmax(6rem, 1fr) minmax(max-content, 134rem) minmax(6rem, 1fr);
   justify-content: center;
   align-items: center;
 }
 
 .nav {
-  // grid-column: 2/10;
+  grid-column: 2/3;
   // display: flex;
   // justify-content: space-between;
   display: grid;
