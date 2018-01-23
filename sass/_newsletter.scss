@@ -32,12 +32,10 @@
     &::placeholder{
       color: #fff;
     }
-
-    &:focus {
-      outline: none;
-    }
   }
-
- 
+  
+  &__input:focus {
+    outline: none;
+ }
 
 }
