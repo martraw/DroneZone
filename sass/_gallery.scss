@@ -47,13 +47,12 @@
     grid-column: 1/2;
     // max-width: 100%;
     width: 100%;
-    height: auto;
+    height: 100%;
     display: block;
 
   }
 
   &__play-btn {
-    // display: inline-block;
     display: flex;
     flex: 0 0 auto;
     justify-content: center;
@@ -71,8 +70,5 @@
     border-radius: 50%;
     background-color: transparent;
     outline: none;
-
-    /* Style for "Rounded Re" */
-
   }
 }

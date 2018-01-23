@@ -1,0 +1,43 @@
+.newsletter {
+  grid-column: full-start/full-end;
+  background-image: url(../img/neswletter-bg.jpg);
+  ackground-position: center;  
+  background-repeat: no-repeat;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__form .btn--white {
+    transform: translateX(-5rem)
+  }
+
+  &__input {
+    display: inline-block;
+    width: 30rem;
+    height: 5rem;
+    font-size: 1.8rem;
+    font-family: $font-primary;
+    // font-weight: 700;
+    border-radius: 50px;
+    color: #fff;
+    // background-color: transparent;
+    background-color: rgba($color: #fff, $alpha: .3);
+    // border: 1px solid white;
+    border: none;
+    opacity: .8;
+    padding: 0 2rem;
+
+    &::placeholder{
+      color: #fff;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+ 
+
+}
