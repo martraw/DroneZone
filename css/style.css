@@ -16,7 +16,7 @@ body {
 
 .container {
   display: grid;
-  grid-template-rows: [top-nav-start] 8rem [top-nav-end header-start] calc(100vh - 8rem) [header-end features-start] minmax(60rem, min-content) [features-end drone-start] minmax(70rem, min-content) [drone-end gallery-start] minmax(128rem, min-content) [gallery-end newsletter-start] minmax(48rem, min-content) [newsletter-end map-start] minmax(60rem, min-content) [map-end];
+  grid-template-rows: [top-nav-start] 8rem [top-nav-end header-start] calc(100vh - 8rem) [header-end features-start] minmax(60rem, min-content) [features-end drone-start] minmax(70rem, min-content) [drone-end gallery-start] minmax(128rem, min-content) [gallery-end newsletter-start] minmax(48rem, min-content) [newsletter-end map-start] minmax(60rem, min-content) [map-end footer-start] minmax(30rem, min-content) [fotter-end];
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 16.75rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
 
 .nav-container {
@@ -250,6 +250,22 @@ body {
 #map {
   width: 100%;
   height: 100%; }
+
+.footer {
+  grid-column: full-start/full-end;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 6rem; }
+  .footer__content {
+    font-size: 1.8rem;
+    line-height: 3.8rem;
+    color: #a7acbc;
+    font-weight: 300; }
+  .footer__content span {
+    font-weight: 700; }
 
 .heading-1 {
   font-size: 4.8rem;
