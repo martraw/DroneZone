@@ -45,6 +45,15 @@
   font-weight: 300;
   line-height: 3.6rem;
   cursor: pointer;
+  transition: all .2s;
+
+  &:hover {
+    transform: translateY(-.2rem)
+  }
+
+  &:active {
+    transform: translateY(-.1rem);
+  }
   
   a {
     text-decoration: none;
@@ -57,12 +66,13 @@
     a {
       text-decoration: none;
       color: #d32721;
-      }
+    }
   }
-
+  
   &--transparent {
     background-color: transparent;
     border: 1px solid #fff;
+    margin-left: 1.5rem;
     a {
       color: #fff;
 

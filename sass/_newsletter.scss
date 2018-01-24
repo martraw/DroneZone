@@ -10,7 +10,11 @@
   align-items: center;
 
   &__form .btn--white {
-    transform: translateX(-5rem)
+    transform: translate(-5rem)
+  }
+
+  &__form .btn--white:hover {
+    transform: translate(-5rem, 0);
   }
 
   &__input {
