@@ -1,65 +1,53 @@
-// function initMap(){
-//   var options = {
-//     zoom: 12,
-//     center: {lat: 51.5277, lng: 17.27137}
-//   };
-
-//   var image = {
-//     url: 'img/location-pin.png',
-//       // This marker is 20 pixels wide by 32 pixels high.
-//       size: new google.maps.Size(41, 63),
-//       // The origin for this image is (0, 0).
-//       origin: new google.maps.Point(0, 0),
-//       // The anchor for this image is the base of the flagpole at (0, 32).
-//       anchor: new google.maps.Point(20, 63)
-//   };
-
-//   var infoWindow = new google.maps.InfoWindow({
-//     content: '<H2>Mordor</H2> <p>Tu się dzieje!</p>'
-//   })
-
-//   var map = new google.maps.Map(document.getElementById('map'), options);
-
-//   var marker = new google.maps.Marker({
-//     position: {lat: 51.499323, lng: 17.168887},
-//     map: map,
-//     icon: image
-//   });
-
-//   marker.addListener('click', function(){
-//     infoWindow.open(map, marker)
-//   });
-
-// }
-
+/* Map settings */
 function initMap(){
   const options = {
     center: {lat: 51.5277, lng: 17.27137},
-    zoom: 12
+    zoom: 11
   };
-  
+/* Create map object */  
   const map = new google.maps.Map(document.getElementById('map'), options);
-  
+
+/* Custom marker icon */  
   const markerIcon = {
     url: '../img/location-pin.png',
     size: new google.maps.Size(41,63),
     origin: new google.maps.Point(0, 0),
     anchor: new google.maps.Point(20, 63)
-  }
-  
+  };
+
+/* Markers */  
   const markesPropss = [
-      {lat: 51.499538, lng: 17.169372},
-      {lat: 51.5277, lng: 17.27137},
+      {
+        coords: {lat: 51.499538, lng: 17.169372},
+        content: `<h1>DroneZone location 2</h1> <h2>Lorem ipsum</h2> <p>Mauris consequat libero metus, nec ultricies sem efficitur quis.</p>`
+      },
+      {
+        coords: {lat: 51.5277, lng: 17.27137},
+        content: `<h1>DroneZone location 1</h1> <h3>Lorem ipsum</h3> <p>Mauris consequat libero metus, nec ultricies sem efficitur quis.</p>`
+      },
+      {
+        coords: {lat: 51.60945, lng: 16.85863},
+        content: `<h1>DroneZone location 3</h1> <h2>Lorem ipsum</h2> <p>Mauris consequat libero metus, nec ultricies sem efficitur quis.</p>`
+      }
+    ];
 
-    ]
+  
+  function addMarker(props) {
+    const marker = new google.maps.Marker({
+      position: props.coords,
+      map: map,
+      icon: markerIcon
+    });
 
-  const marker = new google.maps.Marker({
-    position: markesPropss[0],
-    map: map,
-    icon: markerIcon
-  });
+    if(props.content) {
+      const infoWindow = new google.maps.InfoWindow({
+        content: props.content
+      }); 
+      marker.addListener('click', function() {
+        infoWindow.open(map, marker);
+      })
+    }
+  }
 
-
-
-
+  markesPropss.forEach(prop => addMarker(prop));
 };
