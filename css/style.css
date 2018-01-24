@@ -127,6 +127,8 @@ body {
     grid-row-gap: 2rem;
     align-content: center;
     color: #5e6372; }
+  .drone__gradient-wrap {
+    width: 80%; }
   .drone__text {
     font-size: 1.8rem;
     font-weight: 400;
@@ -274,7 +276,7 @@ body {
   align-self: end; }
 
 .heading-2 {
-  background-image: linear-gradient(15deg, #cb0035 0%, #e06900 100%);
+  background-image: linear-gradient(15deg, #cb0035 0%, #e06900 80%);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -290,7 +292,7 @@ body {
   font-size: 3rem;
   font-weight: 700;
   display: inline-block;
-  background-image: linear-gradient(15deg, #cb0035 0%, #e06900 100%);
+  background-image: linear-gradient(15deg, #cb0035 0%, #e06900 80%);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent; }
@@ -306,7 +308,8 @@ body {
   font-family: "Montserrat", sans-serif;
   font-size: 1.8rem;
   font-weight: 300;
-  line-height: 3.6rem; }
+  line-height: 3.6rem;
+  cursor: pointer; }
   .btn a {
     text-decoration: none; }
   .btn--white {
@@ -324,3 +327,8 @@ body {
     .btn--blue a {
       text-decoration: none;
       color: #fff; }
+
+.play-polygon {
+  padding-right: 1rem;
+  display: inline-block;
+  transform: translateY(0.3rem); }
