@@ -6,10 +6,13 @@
   display: grid;
   // grid-template-columns: 1fr repeat(8, minmax(min-content, 16.75rem)) 1fr;
   grid-template-columns: minmax(6rem, 1fr) minmax(max-content, 134rem) minmax(6rem, 1fr);
-  // grid-template-columns: minmax(max-content, 134rem) ;
-  
   justify-content: center;
   align-items: center;
+
+  @include media(tab-land) {
+  grid-template-columns: minmax(3rem, 1fr) minmax(max-content, 134rem) minmax(3rem, 1fr);
+    
+  }
 }
 
 .nav {
@@ -21,6 +24,13 @@
   align-items: center;
   color: #fff;
   font-size: 1.8rem;
+
+  &__logo {
+    // @include media(tab-port) {
+    //   width: 50%;
+    //   height: auto;
+    // }
+  }
   
   &__list {
     display: inline-block;
@@ -42,6 +52,10 @@
 
   &__item:not(:last-child) {
     margin-right: 3.5rem;
+
+    @include media(tab-port) {
+    margin-right: 2rem;
+    }
   }
 
   &__link {

@@ -9,6 +9,10 @@
   grid-row-gap: 1rem;
   justify-content: center;
 
+  @include media(big-screen) {
+    grid-template-columns: repeat(2, minmax(25rem, 67rem));
+  }
+
   &__box {
     // display: flex;
     // flex-flow: row wrap;
