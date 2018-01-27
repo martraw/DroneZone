@@ -38,6 +38,10 @@
     grid-template-columns: repeat(7, minmax(min-content, max-content));
     align-items: center;
 
+    @include media(tab-port) {
+      display: none;
+    }
+
   }
 
   &__item {
