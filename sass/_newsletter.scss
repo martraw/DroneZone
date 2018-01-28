@@ -1,7 +1,7 @@
 .newsletter {
   grid-column: full-start/full-end;
   background-image: url(../img/neswletter-bg.jpg);
-  ackground-position: center;  
+  background-position: center;  
   background-repeat: no-repeat;
 
   display: flex;
@@ -35,6 +35,10 @@
 
     &::placeholder{
       color: #fff;
+    }
+
+    @include media(phone){
+      width: 20rem;
     }
   }
   

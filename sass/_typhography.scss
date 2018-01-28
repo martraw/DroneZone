@@ -4,6 +4,7 @@
   letter-spacing: 0.2rem;
   align-self: end;
   text-align: center;
+  padding-top: 10rem;
 }
 
 .heading-2 {
@@ -21,6 +22,10 @@
     color: #fff;
     background-image: none;
     text-align: center;
+  }
+
+  @include media(phone){
+    font-size: 3.5rem;
   }
 }
 
