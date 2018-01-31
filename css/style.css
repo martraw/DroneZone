@@ -371,7 +371,7 @@ body {
     top: 0;
     transform: rotate(-135deg); }
   .nav-popup__foreground-active .nav-popup__icon {
-    background-color: #fff; }
+    background-color: transparent; }
 
 .nav-popup__icon {
   position: relative; }
