@@ -370,6 +370,8 @@ body {
   .nav-popup__foreground-active .nav-popup__icon::after {
     top: 0;
     transform: rotate(-135deg); }
+  .nav-popup__foreground-active .nav-popup__icon {
+    background-color: #fff; }
 
 .nav-popup__icon {
   position: relative; }
@@ -382,6 +384,7 @@ body {
     content: "";
     position: absolute;
     left: 0;
+    background-color: #000;
     transition: all .2s; }
   .nav-popup__icon::before {
     top: -.8rem; }
