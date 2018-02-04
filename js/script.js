@@ -7,10 +7,10 @@
   const topNavBar = document.querySelector('.nav-container');
 
   function showButton() {
-    if (window.scrollY > topNavBar.offsetHeight) {
+    if (window.scrollY > topNavBar.offsetHeight || window.innerWidth <= 900) {
       navPopup.classList.add('nav-popup-visible');
     } else {
-      if (navPopup.classList.contains('nav-popup-active') && navButton.classList.contains('nav-popup__foreground-active') && window.scrollY < topNavBar.offsetHeight) {
+      if (navPopup.classList.contains('nav-popup-active') && navButton.classList.contains('nav-popup__foreground-active') && window.scrollY < topNavBar.offsetHeight || window.innerWidth <= 900)  {
         return;
       } else {
         navPopup.classList.remove('nav-popup-visible');
@@ -30,7 +30,7 @@
     navBackground.classList.remove('nav-popup__background-active');
     navContent.classList.remove('nav-popup__container-active');
     navButton.classList.remove('nav-popup__foreground-active');
-    if (window.scrollY < topNavBar.offsetHeight) {
+    if (window.scrollY < topNavBar.offsetHeight && window.innerWidth > 900) {
       setTimeout(() => {
         navPopup.classList.remove('nav-popup-visible');
       }, 800);
@@ -45,7 +45,7 @@
       closeNav();
     }
   };
-
+  showButton();
   window.addEventListener('scroll', showButton);
   navButton.addEventListener('click', handleNav);
 
