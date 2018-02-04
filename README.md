@@ -5,4 +5,4 @@ Simple landing page based on free PSD template created in order to practice Css 
 
 *Technologies used: HTML, Css/Sass, JavaScript.*
 
-[](https://symu.co/image/jpgngbmzdks/1440/10000/fit/original/95/jpg/)
+[Picture](https://symu.co/image/jpgngbmzdks/1440/10000/fit/original/95/jpg/)
