@@ -9,7 +9,7 @@
   
   /* Custom marker icon */  
   const markerIcon = {
-    url: '/DroneZone/img/location-pin.png',
+    url: 'https://martraw.github.io/DroneZone/img/location-pin.png',
     size: new google.maps.Size(41,63),
     origin: new google.maps.Point(0, 0),
     anchor: new google.maps.Point(20, 63)
