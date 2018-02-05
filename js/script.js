@@ -52,7 +52,7 @@
   markesPropss.forEach(prop => addMarker(prop));
 };
 
-// document.addEventListener("DOMContentLoaded", function(event) {
+document.addEventListener("DOMContentLoaded", function(event) {
   const navPopup = document.querySelector('.nav-popup');
   const navButton = navPopup.querySelector('.nav-popup__foreground');
   const navBackground = document.querySelector('.nav-popup__background');
@@ -102,6 +102,6 @@
   showButton();
   window.addEventListener('scroll', showButton);
   navButton.addEventListener('click', handleNav);
-// });
+});
 
  

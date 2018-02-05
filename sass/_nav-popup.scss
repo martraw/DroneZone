@@ -9,6 +9,10 @@
     transition: transform .3s;
     z-index:30;
 
+    @include media(tab-port) {
+      transform: scale(1);
+    }
+
     &-visible {
       transform: scale(1);
     }
