@@ -1,13 +1,11 @@
 .header {
   background-image: url(../img/header-bg.jpg);
-  // background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   grid-column: full-start/full-end;
   grid-row: top-nav-start/header-end;
   justify-content: center;
   align-content: center;
-  // padding-top: 20rem;
 
   display: grid;
   grid-template-rows: minmax(min-content, 1fr) repeat(2, min-content) minmax(min-content, 1fr) ;

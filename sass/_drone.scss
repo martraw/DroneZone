@@ -8,7 +8,6 @@
   @include media(tab-port) {
     grid-column: center-start/center-end;
     grid-template-columns: 100%;
-    
   }
 
   &__content {
@@ -72,10 +71,6 @@
     }
   }
 
-  &__list-item:not(:last-child) {
-    // margin-bottom: 6rem;
-  }
-  
   &__number {
     padding: 0;
     display: flex;

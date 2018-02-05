@@ -93,11 +93,6 @@
     }
   }
 
-  &-visible ~ &__background {
-    // display: inline-block;
-    // opacity: 1
-  }
-
   &__container {
     height: 100vh;
     width: 100%;
@@ -120,11 +115,9 @@
     }
   }
 
-  
-
   &__list {
     list-style: none;
-    position: relative; // z-index: 75;
+    position: relative; 
   }
 
   &__item {

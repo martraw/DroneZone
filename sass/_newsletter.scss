@@ -23,12 +23,9 @@
     height: 5rem;
     font-size: 1.8rem;
     font-family: $font-primary;
-    // font-weight: 700;
     border-radius: 50px;
     color: #fff;
-    // background-color: transparent;
     background-color: rgba($color: #fff, $alpha: .3);
-    // border: 1px solid white;
     border: none;
     opacity: .8;
     padding: 0 2rem;
@@ -45,5 +42,4 @@
   &__input:focus {
     outline: none;
  }
-
 }
